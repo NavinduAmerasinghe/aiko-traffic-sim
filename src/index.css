@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #0a0e14;
+  color: #e6edf5;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Slim scrollbars that fit the dark theme */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2c374a transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #2c374a;
+  border-radius: 8px;
+}
+
+/* MapLibre control theming to match the dark UI */
+.maplibregl-ctrl-group {
+  background: #161d2b !important;
+  border: 1px solid #2c374a !important;
+}
+.maplibregl-ctrl-group button + button {
+  border-top: 1px solid #2c374a !important;
+}
+.maplibregl-ctrl button .maplibregl-ctrl-icon {
+  filter: invert(1) hue-rotate(180deg) brightness(1.1);
+}
+.maplibregl-popup-content {
+  background: #161d2b !important;
+  color: #e6edf5 !important;
+  border: 1px solid #2c374a !important;
+  border-radius: 8px !important;
+  font-family: Inter, system-ui, sans-serif !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45) !important;
+}
+.maplibregl-popup-tip {
+  border-top-color: #161d2b !important;
+  border-bottom-color: #161d2b !important;
+}
+.maplibregl-ctrl-attrib {
+  background: rgba(17, 23, 34, 0.8) !important;
+}
+.maplibregl-ctrl-attrib a {
+  color: #9aa7bd !important;
+}
