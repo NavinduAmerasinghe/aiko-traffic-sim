@@ -46,7 +46,7 @@ export function Header({ mode, onModeChange, loading, httpStatus, error, onRefre
 
       <div className="flex items-center gap-2.5">
         {/* Mock / Live toggle */}
-        <div className="inline-flex rounded-lg border border-border-subtle bg-bg-base p-0.5">
+        {/* <div className="inline-flex rounded-lg border border-border-subtle bg-bg-base p-0.5">
           {(["live", "mock"] as DataMode[]).map((m) => (
             <button
               key={m}
@@ -60,7 +60,7 @@ export function Header({ mode, onModeChange, loading, httpStatus, error, onRefre
               {m === "mock" ? "Mock Data — static sample" : "Live API"}
             </button>
           ))}
-        </div>
+        </div> */}
 
         <span
           className={cn(

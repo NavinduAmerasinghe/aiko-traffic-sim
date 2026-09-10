@@ -284,8 +284,10 @@ export function TrafficMap(props: TrafficMapProps) {
     <div className="relative h-full w-full overflow-hidden rounded-xl border border-border-subtle">
       <div ref={containerRef} className="h-full w-full" />
       {/* Simulation disclaimer overlay */}
-      <div className="pointer-events-none absolute bottom-2 right-2 max-w-[280px] rounded-lg border border-border-subtle bg-bg-panel/90 px-3 py-2 text-[11px] leading-snug text-text-muted backdrop-blur">
-        Simulated vehicles based on observed aggregate traffic speed — not real
+      <div className="pointer-events-none absolute bottom-8 right-2 max-w-[280px] rounded-lg border border-border-subtle bg-bg-panel/90 px-3 py-2 text-[11px] leading-snug text-text-muted backdrop-blur">
+        {/* Simulated vehicles based on observed aggregate traffic speed — not real
+        individual vehicle positions. */}
+            Note: Not real
         individual vehicle positions.
       </div>
     </div>

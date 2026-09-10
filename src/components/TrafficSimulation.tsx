@@ -74,11 +74,15 @@ export function TrafficSimulation({
           </div>
         </div>
 
-        <p className="text-[11px] leading-snug text-text-muted">
+        {/* <p className="text-[11px] leading-snug text-text-muted">
           Vehicle motion is driven by the observed aggregate{" "}
           <span className="text-text-secondary">current speed</span>
           {currentSpeed != null ? ` (${currentSpeed} km/h)` : ""}. These are
           simulated markers, not real vehicle positions.
+        </p> */}
+           <p className="text-[11px] leading-snug text-text-muted">
+          Note: These are
+          simulated markers, not real vehicle positions. (Future Work !!!!)
         </p>
       </CardContent>
     </Card>
