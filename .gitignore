@@ -7,11 +7,11 @@ dist-ssr
 !.env.example
 .DS_Store
 
-# scenario data copied from aiko-fintraffic/analysis/outputs (kept out of git for now)
-public/scenario_model.json
-public/scenario_data.json
-public/scenario_points/
-public/closure_lempaala.json
-public/closure_lempaala_days.json
-public/closure_lempaala_days.json
-public/scenario_paths.json
+# # scenario data copied from aiko-fintraffic/analysis/outputs (kept out of git for now)
+# public/scenario_model.json
+# public/scenario_data.json
+# public/scenario_points/
+# public/closure_lempaala.json
+# public/closure_lempaala_days.json
+# public/closure_lempaala_days.json
+# public/scenario_paths.json
